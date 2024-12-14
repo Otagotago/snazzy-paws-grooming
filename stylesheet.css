@@ -140,6 +140,12 @@ button {
 
 .download-button {
   width: 100%;
+  font-size: 0.5em;
+}
+
+.book-button {
+  width: 20%;
+  font-size: 0.5em;
 }
 
 .button-div {
@@ -206,7 +212,7 @@ p {
 }
 
 .guide-text {
-  font-size: 1.2em;
+  font-size: 30%;
 }
 
 /*Styling for the table present on services*/
@@ -244,14 +250,14 @@ td {
 /*Gift voucher text increased to 2.5 time sthe normal size*/
 
 .gift-voucher-text {
-  font-size: 2.5em; 
+  font-size: 0.6em; 
   padding-bottom: 1.5em;
 }
 
 .gift-voucher-button {
   background-color: white;
   color: teal;
-  font-size: inherit;
+  font-size: 0.3em;
 }
 
 /*Container element for the gallery images*/
