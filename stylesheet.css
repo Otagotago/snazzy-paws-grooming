@@ -1,0 +1,414 @@
+* {             /*Universal styles that will be applied to most of the document unless stated changes elsewhere*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Atma;
+}
+
+/*A general section styling for the section elements*/
+
+section {
+  padding: 50px 20px; 
+}
+
+/*Media query for helping with responsiveness on smaller screens*/
+
+@media (max-width: 750px) { 
+  section {
+    padding: 30px 10px;
+  }
+}
+
+/*Flexbox layout used for header and footer containers to arrange items, wrapping onto new lines when smaller screens*/
+
+.header-container { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+}
+
+/*Media query for narrower screens with main difference changing ul element into a column*/
+
+@media (max-width: 750px) {
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10%;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Centered elements using flexbox layouts, 1.5em font sizes help with responsiveness*/
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+/*Remove the bullet points for a better cleaner look*/
+ul {
+  list-style: none; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+/*Removes the underline from links and sets the color to white*/
+a {
+  text-decoration: none; 
+  color: white;
+}
+
+/*Sets a large font size for the page title and a smaller one for the subtitle below it*/
+
+.page-title {
+  font-size: 4em; 
+  justify-content: center;
+  padding: 20px 100px 20px 100px;
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  font-size: 1.5em; 
+  justify-content: center;
+  padding: 20px 100px 20px 100px;
+}
+
+/*Sets the styling of the FAQ section on the contact page*/
+
+.faq {
+  display: flex;
+  font-size: 1.5em; 
+  justify-content: center;
+  margin: 100px 400px 100px 400px;
+}
+
+/*Gives the buttons most of their styles, some classes have been made for other buttons*/
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  border-radius: 20px;
+  background-color: teal;
+  color: white;
+}
+
+/*Media Query to adjust the content for smaller screen sizes*/
+
+@media (max-width: 750px) {
+  .page-title {
+    font-size: 3em;
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9em;
+  }
+}
+
+/*Download button set at 100% width to better fit with the guide images*/
+
+.download-button {
+  width: 100%;
+}
+
+.button-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*Div elements for the images have been used to position them in the correct places, both flex in this case*/
+
+.image-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-div2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  margin: 20px;
+}
+
+/*Sets the dimensions and shape of the images that have been used on the pages*/
+
+.med-image {
+  width: 300px;
+  height: auto;
+}
+
+.med-image2 {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 25px;
+}
+
+/*Another Media Query used to adjust for the smaller screen sizes*/
+
+@media (max-width: 750px) {
+  .page-title {
+    font-size: 2.5em;
+    padding: 10px 20px;
+  }
+
+  p.guide-text, .gift-voucher-text {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .med-image2 {
+    width: 100%; /* Scale down images for smaller screens */
+  }
+}
+
+p {
+  text-align: center;
+}
+
+.guide-text {
+  font-size: 1.2em;
+}
+
+/*Styling for the table present on services*/
+
+.table {
+  display: block; /*Makes the table a block element able to take up full width of parent*/
+  overflow-x: auto; /*Adds horizontal scrolling if the table overflows the containers width*/
+  margin: 0 auto; /*Centers the table horizontally*/
+  padding: 20px auto; 
+  font-size: 20px; 
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  padding-bottom: 20px;
+}
+
+td {
+  padding-bottom: 20px;
+  text-align: center;
+  width: 30%;
+  vertical-align: middle;
+}
+
+/*The "row-odd" class was used to differentiate line by line on the table seperating different services*/
+
+.row-odd {
+  color: teal;
+}
+
+/*Gift voucher text increased to 2.5 time sthe normal size*/
+
+.gift-voucher-text {
+  font-size: 2.5em; 
+  padding-bottom: 1.5em;
+}
+
+.gift-voucher-button {
+  background-color: white;
+  color: teal;
+  font-size: inherit;
+}
+
+/*Container element for the gallery images*/
+
+.container {
+  display: grid; /*Defines the container for the grid element*/
+  grid-template-rows: repeat(4, 250px); /*Creates 4 rows that are 250px in height each*/
+  grid-template-columns: repeat(4, 250px); /*Creates 4 columns which are 250px in width each*/
+  gap: 20px; /*Add 20px of space between the grid items*/
+  grid-template-areas: /*Defines grid layout by naming each section, each value represents a "cell" or area on table and has been assigned to a image*/
+    'one two three four'
+    'five six seven eight'
+    'nine ten eleven twelve'
+    'thirteen fourteen fifteen sixteen';
+  justify-content: center;
+  padding: 100px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  
+  }
+}
+  
+.gallery-images {
+  width: 100%;
+  height: 100%;
+}
+
+/*Items listed below are related the the "container" class that defines where they will sit in the grid*/
+
+.item-1 {
+ grid-area: one;
+}
+
+.item-2 {
+ grid-area: two;
+}
+
+.item-3 {
+ grid-area: three;
+}
+
+.item-4 {
+ grid-area: four;
+}
+
+.item-5 {
+ grid-area: five;
+}
+
+.item-6 {
+ grid-area: six;
+}
+
+.item-7 {
+ grid-area: seven;
+}
+
+.item-8 {
+ grid-area: eight;
+}
+
+.item-9 {
+ grid-area: nine;
+}
+
+.item-10 {
+ grid-area: ten;
+}
+
+.item-11 {
+ grid-area: eleven;
+}
+
+.item-12 {
+ grid-area: twelve;
+}
+
+.item-13 {
+ grid-area: thirteen;
+}
+
+.item-14 {
+ grid-area: fourteen;
+}
+
+.item-15 {
+ grid-area: fifteen;
+}
+
+.item-16 {
+ grid-area: sixteen;
+}
+
+.booking-form {
+  margin-bottom: 50px;
+}
+
+.booking-form form {
+  display: flex; /*Defines the display as a flex container*/
+  flex-direction: column; /*The form elements are arranged into a column formation vertically*/
+  align-items: flex-start; /*Aligns the form elements to the side, which is the left side*/
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto; /*Centers the form horizontally*/
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /*Form elements displayed in a column*/
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.form-button {
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form {
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+/*This is for the iFrame section, created a box around the iFrame for it to be situated in*/
+
+.google-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+
+.google-map iframe {
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header-container">
+          <h2>Snazzy Paws Grooming</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="page-title">Our Services</g>
+      <div class="table">
+        <table> <!---Table containing all the services, descriptions, and prices which is styled with CSS to differentiate line by line-->
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-odd">
+              <td>Bath and Brush</td>
+              <td>Shampoo, blow-dry, brush-out, and nail trim.</td>
+              <td>$25–$50</td>
+            </tr>
+            <tr>
+              <td>Haircut</td>
+              <td>Bath, blow-dry, haircut (based on breed standard or owner's preference) and nail trim.</td>
+              <td>$45–$85</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Nail Trim</td>
+              <td>Trim nails and, in some cases, filing.</td>
+              <td>$10–$20</td>
+            </tr>
+            <tr>
+              <td>Ear Cleaning</td>
+              <td>Gentle cleaning of ears to remove wax and debris.</td>
+              <td>$10–$15</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Teeth Brushing</td>
+              <td>Brushing with pet-safe toothpaste.</td>
+              <td>$10–$15</td>
+            </tr>
+            <tr>
+              <td>De-shedding Treatment</td>
+              <td>Special shampoo and undercoat removal.</td>
+              <td>$20–$40 (in addition to bath or haircut)</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Flea and Tick Treatment</td>
+              <td>Shampoo and preventative treatment.</td>
+              <td>$15–$30</td>
+            </tr>
+            <tr>
+              <td>Spa Package</td>
+              <td>Bath, haircut, teeth brushing, nail trim, and sometimes special scents or conditioners.</td>
+              <td>$75–$150</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Express Service</td>
+              <td>For dogs that need minimal grooming or a quick touch-up.</td>
+              <td>An additional $15–$25</td>
+            </tr>
+            <tr>
+              <td>Medicated Bath</td>
+              <td>For pets with skin conditions requiring special shampoo.</td>
+              <td>An additional $20–$40</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Special-Breed Cuts</td>
+              <td>Breed-specific cuts or styling based on customer preference.</td>
+              <td>Quoted after consultation</td>
+            </tr>
+            <tr>
+              <td>Puppy Package</td>
+              <td>Introductory grooming services tailored for puppies.</td>
+              <td>$30–$60</td>
+            </tr>
+            <tr class="row-odd">
+              <td>Senior Dog Package</td>
+              <td>Grooming services tailored for older dogs, often with special handling and care.</td>
+              <td>$40–$80</td>
+            </tr>
+            <tr>
+              <td>Full Grooming Package</td>
+              <td>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim, and ear cleaning.</td>
+              <td>$60–$120</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="button-div">
+        <button onclick="location.href='booking.html'">Book Now</button> <!--Clear booking button to help users make a faster decision-->
+      </div>
+      <br>
+      <div class="image-div2"> <!--Buttons and images for downloadable guides on dog care for four different types of dogs-->
+        <div>
+          <p class="guide-text">Guide for puppy care</p>
+          <img src="https://images.pexels.com/photos/1954515/pexels-photo-1954515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="med-image2" alt="puppy dog"></img><br>
+        <button class="download-button" aria-label="Download puppy care guide">Download</button>
+      </div>
+
+      <div>
+        <p class="guide-text">Guide for elder dog care</p>
+        <img src="https://images.pexels.com/photos/1684504/pexels-photo-1684504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="med-image2" alt="older dog but still cute"></img><br>
+      <button class="download-button" aria-label="Download eldery dog guide">Download</button>
+      </div>
+
+    <div>
+      <p class="guide-text">Guide for dogs with medical challenges</p>
+      <img src="https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="med-image2" alt="black and white dog with a medical challenge"></img><br>
+    <button class="download-button" aria-label="Download medical challenged dog guide">Download</button>
+    </div>
+
+  <div>
+    <p class="guide-text">Guide for general dog care</p>
+    <img src="https://images.pexels.com/photos/26793646/pexels-photo-26793646/free-photo-of-a-corgi-sitting-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="med-image2" alt="fox looking dog in the forrest"></img><br>
+  <button class="download-button" aria-label="Download general dog care guide">Download</button>
+  </div>
+
+</div>
+<br>
+<br>
+<div>
+  <p class="gift-voucher-text">Want a nice birthday or holiday present? Check out our gift vouchers!    </p>
+</div>
+
+<div class="button-div"> <!--Vouchers ranging from $10-$200 which are buttons that would go to a purchase page-->
+  <button class="gift-voucher-button" aria-label="10 dollar voucher for Snazzy Paws">$10 VOUCHER</button>
+  <button class="gift-voucher-button" aria-label="25 dollar voucher for Snazzy Paws">$25 VOUCHER</button>
+  <button class="gift-voucher-button" aria-label="50 dollar voucher for Snazzy Paws">$50 VOUCHER</button>
+  <button class="gift-voucher-button" aria-label="100 dollar voucher for Snazzy Paws">$100 VOUCHER</button>
+  <button class="gift-voucher-button" aria-label="200 dollar voucher for Snazzy Paws">$200 VOUCHER</button>
+</div>
+</section>
+
+<footer>
+  <nav>
+    <div class="footer-container">
+      <h2>Opening hours: Monday - Saturday, 9am - 5pm</h2>
+    </div>
+  </nav>
+</footer>
+
+  </body>
+</html>

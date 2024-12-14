@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header-container">
+          <h2>Snazzy Paws Grooming</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="page-title">Booking</h1>
+    </section>
+    
+    <section class="booking-form"> <!---Booking form for booking services at Snazzy Paws Grooming-->
+    <form>
+      <div class="form-group">                        <!---Each input has a placeholder and an id to connect it to the labels-->
+        <label for="owner-name">Owner's Name:</label>
+        <input type="text" id="owner-name" name="owner-name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">                        <!--The CSS used here makes the table in a column rather than in a row-->
+        <label for="dog-name">Dog's Name:</label>
+        <input type="text" id="dog-name" name="dog-name" placeholder="Enter your dogs name" required>
+      </div>
+      <div class="form-group">
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" placeholder="Provide the breed of your dog if known" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Provide the age of your dog if known" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>  <!--For the service box, a drop down menu is incorporated for ease of use by customers-->
+
+          <option value="">Select a Service</option>
+
+          <optgroup label="Basic Grooming">
+            <option value="bath-and-brush">Bath and Brush - $25–$50</option>
+            <option value="haircut">Haircut - $45–$85</option>
+            <option value="nail-trim">Nail Trim - $10–$20</option>
+            <option value="ear-cleaning">Ear Cleaning - $10–$15</option>
+            <option value="teeth-brushing">Teeth Brushing - $10–$15</option>
+          </optgroup>
+
+          <optgroup label="Special Treatments">
+            <option value="de-shedding">De-shedding Treatment - $20–$40</option>
+            <option value="flea-tick-treatment">Flea and Tick Treatment - $15–$30</option>
+            <option value="spa-package">Spa Package - $75–$150</option>
+            <option value="express-service">Express Service - $15–$25</option>
+            <option value="medicated-bath">Medicated Bath - $20–$40</option>
+          </optgroup>
+
+          <optgroup label="Packages">
+            <option value="special-breed-cuts">Special-Breed Cuts - Quoted after consultation</option>
+            <option value="puppy-package">Puppy Package - $30–$60</option>
+            <option value="senior-dog-package">Senior Dog Package - $40–$80</option>
+            <option value="full-grooming-package">Full Grooming Package - $60–$120</option>
+          </optgroup>
+        </select>
+      </div>
+      <button type="submit" class="form-button">Submit</button> <!--A submit button that will be connected to a system outside of the scope of HTML and CSS-->
+    </form>
+    </section>
+  
+    <footer>
+      <nav>
+        <div class="footer-container">
+          <h2>Opening hours: Monday - Saturday, 9am - 5pm</h2>
+        </div>
+      </nav>
+    </footer>
+
+  </body>
+</html>

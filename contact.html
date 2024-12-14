@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header-container">
+          <h2>Snazzy Paws Grooming</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section> <!--Simple yet clear contact information area with the ability to use a form for contact-->
+      <h1 class="page-title">Contact Information</h1>
+      <p class="subtitle">Opening Hours</p>
+      <p class="subtitle">Monday to Saturday, 9am to 5pm</p>
+      <p class="subtitle">If you would like to get in contact, please fill out the form below</p>
+      <br>
+      <section class="contact-form"> <!--Contact form will be connected outside of the scope of HTML and CSS-->
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name"required>
+          <label for"email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email address" required>
+          <label for="message">Message:</label>
+          <input type="text" id="Message" placeholder="Enter your message" required></input><br>
+          <br>
+          <button type="submit"   >Send</button>
+        </form>
+        </section>
+    <div class="faq"> <!--FAQ section to help customers get immediate answers for common questions-->
+        <div>
+            <h2>FAQs</h2><br>
+          
+          <details>
+            <summary>What services do you offer?</summary>
+            <p>We offer a range of grooming services, including baths, haircuts, nail trimming, ear cleaning, teeth brushing, and de-shedding treatments. We also provide specialty services like breed-specific grooming and spa treatments.</p>
+            </details>
+          
+          <details>
+            <summary>How long does a grooming session take?</summary>
+            <p>The time varies depending on your dog's size, coat condition, and the services requested. On average, it takes 2–3 hours. We will provide an estimate when you drop off your pet.</p>
+            </details>
+          
+          <details>
+            <summary>Do I need to book an appointment, or do you accept walk-ins?</summary>
+            <p>Appointments are recommended to ensure availability. However, we may accept walk-ins for minor services like nail trimming, depending on our schedule.</p>
+            </details>
+          
+          <details>
+            <summary>What is the cost of grooming?</summary>
+            <p>Prices depend on your dog's size, coat type, and the services you choose. Please contact us for a detailed price list or to request a quote for your pet..</p>
+            </details>
+
+        </div>
+    </div>
+      <h2>Where are we?</h2> <!--iFrame map for Hamilton, actual location can be changed with an embedded Google maps-->
+      <section class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7719.698523019883!2d175.25474012023798!3d-37.78221870154998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1733971653854!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="footer-container">
+          <h2>Opening hours: Monday - Saturday, 9am - 5pm</h2>
+        </div>
+      </nav>
+    </footer>
+
+      </body>
+    </html>
