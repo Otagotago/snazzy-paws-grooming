@@ -221,7 +221,7 @@ p {
   display: block; /*Makes the table a block element able to take up full width of parent*/
   overflow-x: auto; /*Adds horizontal scrolling if the table overflows the containers width*/
   margin: 0 auto; /*Centers the table horizontally*/
-  padding: 20px auto; 
+  padding: 20px; 
   font-size: 20px; 
 }
 
